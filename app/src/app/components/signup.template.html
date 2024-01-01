@@ -1,0 +1,19 @@
+<div fxLayout="column wrap" style="height:100vh" fxLayoutAlign="center center" [fxShow]="true">
+  <div fxLayout="column wrap" class="signup-container login-signup-container" fxLayoutAlign="center center" [fxShow]="true">
+    <form class="signup-login-form">
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+        <h2>
+          Sign Up</h2>
+        <mat-form-field [appearance]="&apos;standard&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="true">
+          <input matInput [(ngModel)]="page.email" name="email" type="email" placeholder="Enter Email" [required]="true" id="email">
+          <mat-label>Email</mat-label>
+        </mat-form-field>
+        <mat-form-field [appearance]="&apos;standard&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="true">
+          <input matInput [(ngModel)]="page.password" name="password" type="password" placeholder="Enter Password" [required]="true" id="password">
+          <mat-label>Password</mat-label>
+        </mat-form-field><button mat-button (click)="signUpFunction()">Sign Up</button>
+      </div>
+    </form>
+    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-button style="margin:10px" routerLink="/login">Login Now</button></div>
+  </div>
+</div>

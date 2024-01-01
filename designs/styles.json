@@ -1,0 +1,32 @@
+{
+    "classes": [
+        "app-container",
+        "mat-form-field-appearance-outline",
+        "mat-form-field-wrapper",
+        "chat-list-container",
+        "chat-list-header",
+        "chat-list",
+        "chat-info",
+        "chat-item",
+        "avatar",
+        "user-avatar",
+        "chat-container",
+        "chat-header",
+        "chat-input-box",
+        "chat-messages",
+        "message",
+        "time",
+        "received",
+        "sent",
+        "mat-form-field-infix",
+        "chat-input",
+        "message-sent-btn",
+        "login-signup-container",
+        "login-container",
+        "signup-container",
+        "signup-login-form",
+        "separator",
+        "social-login",
+        "google-auth-button"
+    ]
+}

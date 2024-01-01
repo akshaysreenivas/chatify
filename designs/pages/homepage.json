@@ -1,0 +1,651 @@
+[
+    {
+        "id": "sd_5xSKahYNCee8L1zx",
+        "type": "tab",
+        "createdDate": "2023-12-01T14:37:07.289Z",
+        "label": "homepage",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "homepageComponent"
+    },
+    {
+        "id": "sd_OkDDAoZC96kICWLo",
+        "type": "OnInit",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "onHomeInit",
+        "inputVariables": [],
+        "localVariables": [],
+        "outputVariables": [],
+        "pageVariables": [],
+        "functionName": "onHomeInit",
+        "category": "Lifecycle Events",
+        "x": 45,
+        "y": 180,
+        "wires": [
+            [
+                "sd_1BvEOULPDUdkr9bQ"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "homepageComponent"
+    },
+    {
+        "id": "sd_IUpMGsk8dIdWM5t8",
+        "type": "Script",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.chatList = [\n    { friendName: 'Bill Gates', lastMessagePreview: 'Hey ...', avatar: 'assets/Web/Icons/b3408e62-9928-4c7f-994a-c44cae8a0cd2.png' },\n    { friendName: 'Mark Zuckerberg ', lastMessagePreview: 'Hello...', avatar: 'assets/Web/Icons/1863e159ffb945bf8d58ed9ecaab7fbd.jpeg' },\n    { friendName: 'Bill Gates', lastMessagePreview: 'Hey ...', avatar: 'assets/Web/Icons/b3408e62-9928-4c7f-994a-c44cae8a0cd2.png' },\n    { friendName: 'Mark Zuckerberg ', lastMessagePreview: 'Hello...', avatar: 'assets/Web/Icons/1863e159ffb945bf8d58ed9ecaab7fbd.jpeg' },\n    { friendName: 'Bill Gates', lastMessagePreview: 'Hey ...', avatar: 'assets/Web/Icons/b3408e62-9928-4c7f-994a-c44cae8a0cd2.png' },\n    { friendName: 'Mark Zuckerberg ', lastMessagePreview: 'Hello...', avatar: 'assets/Web/Icons/1863e159ffb945bf8d58ed9ecaab7fbd.jpeg' },\n    { friendName: 'Bill Gates', lastMessagePreview: 'Hey ...', avatar: 'assets/Web/Icons/b3408e62-9928-4c7f-994a-c44cae8a0cd2.png' },\n    { friendName: 'Mark Zuckerberg ', lastMessagePreview: 'Hello...', avatar: 'assets/Web/Icons/1863e159ffb945bf8d58ed9ecaab7fbd.jpeg' },\n    { friendName: 'Bill Gates', lastMessagePreview: 'Hey ...', avatar: 'assets/Web/Icons/b3408e62-9928-4c7f-994a-c44cae8a0cd2.png' },\n    { friendName: 'Mark Zuckerberg ', lastMessagePreview: 'Hello...', avatar: 'assets/Web/Icons/1863e159ffb945bf8d58ed9ecaab7fbd.jpeg' },\n    { friendName: 'Bill Gates', lastMessagePreview: 'Hey ...', avatar: 'assets/Web/Icons/b3408e62-9928-4c7f-994a-c44cae8a0cd2.png' },\n    { friendName: 'Mark Zuckerberg ', lastMessagePreview: 'Hello...', avatar: 'assets/Web/Icons/1863e159ffb945bf8d58ed9ecaab7fbd.jpeg' },\n    { friendName: 'Bill Gates', lastMessagePreview: 'Hey ...', avatar: 'assets/Web/Icons/b3408e62-9928-4c7f-994a-c44cae8a0cd2.png' },\n    { friendName: 'Mark Zuckerberg ', lastMessagePreview: 'Hello...', avatar: 'assets/Web/Icons/1863e159ffb945bf8d58ed9ecaab7fbd.jpeg' },\n    { friendName: 'Bill Gates', lastMessagePreview: 'Hey ...', avatar: 'assets/Web/Icons/b3408e62-9928-4c7f-994a-c44cae8a0cd2.png' },\n    { friendName: 'Mark Zuckerberg ', lastMessagePreview: 'Hello...', avatar: 'assets/Web/Icons/1863e159ffb945bf8d58ed9ecaab7fbd.jpeg' },\n  ];\n",
+        "functionName": "sd_IUpMGsk8dIdWM5t8",
+        "category": "Function",
+        "x": 745,
+        "y": 100,
+        "wires": [
+            [
+                "sd_74vZgbKn5IylP0t3"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homepageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_74vZgbKn5IylP0t3",
+        "type": "PageVariables",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "chatList",
+                "typedIpValue": {
+                    "type": "bh.local",
+                    "value": "chatList"
+                }
+            },
+            {
+                "textIp": "messageData",
+                "typedIpValue": {
+                    "type": "bh.local",
+                    "value": "messages"
+                }
+            },
+            {
+                "textIp": "name",
+                "typedIpValue": {
+                    "type": "bh.local",
+                    "value": "name"
+                }
+            }
+        ],
+        "functionName": "sd_74vZgbKn5IylP0t3",
+        "category": "Function",
+        "x": 825,
+        "y": 100,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homepageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_9MxD1hcp2ss0fvfx",
+        "type": "PageStart",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "sentMessage",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "sentMessage",
+        "category": "General",
+        "x": 45,
+        "y": 380,
+        "wires": [
+            [
+                "sd_OqU4p5Wk4TqZJQjh"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "homepageComponent"
+    },
+    {
+        "id": "sd_OqU4p5Wk4TqZJQjh",
+        "type": "Script",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "if (!page.newMessage.trim()) return;\n\nconst generateUniqueId = () => {\n  return Date.now().toString(36) + Math.random().toString(36).substr(2, 5);\n};\n\n// Create unique id\nconst uniqueId = generateUniqueId();\n\nconst chat = {\n  message: page.newMessage.trim(),\n  timestamp: new Date().toString(),\n  id: generateUniqueId(),\n  username: \"\"\n};\n\n// Save the chat to the 'chats' collection in the database\npage.set(page.ref(page.database, `chats/${chat.id}`), chat);\n\n\npage.newMessage = \"\"\n\n",
+        "functionName": "sd_OqU4p5Wk4TqZJQjh",
+        "category": "Function",
+        "x": 145,
+        "y": 380,
+        "wires": [
+            [
+                "sd_0LaLOUVnqj5HpmyO"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homepageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_0LaLOUVnqj5HpmyO",
+        "type": "PageCallService",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "scroling function",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_5xSKahYNCee8L1zx",
+            "type": "tab",
+            "createdDate": "2023-12-01T14:37:07.289Z",
+            "label": "homepage",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0
+        },
+        "flow": {
+            "flowId": "sd_IKnUAZsmuSz6FIwp",
+            "flowName": "scrollToBottom"
+        },
+        "inputVariables": [],
+        "outputMapping": [],
+        "serviceImportPath": "./",
+        "startName": "scrollToBottom",
+        "inputParams": [],
+        "accept_bh": false,
+        "accept_csd": false,
+        "functionName": "scrolingFunction",
+        "category": "General",
+        "x": 245,
+        "y": 380,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homepageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_IKnUAZsmuSz6FIwp",
+        "type": "PageStart",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "scrollToBottom",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "scrollToBottom",
+        "category": "General",
+        "x": 285,
+        "y": 40,
+        "wires": [
+            [
+                "sd_ucfQzZKBishc5Zif"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "homepageComponent"
+    },
+    {
+        "id": "sd_ucfQzZKBishc5Zif",
+        "type": "Script",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "setTimeout(()=>{\n  bh.messageContainer = document.getElementById('messageContainer');\nif (bh.messageContainer)\n  bh.messageContainer.scrollTop = bh.messageContainer.scrollHeight;\n},0)",
+        "functionName": "sd_ucfQzZKBishc5Zif",
+        "category": "Function",
+        "x": 385,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homepageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_mcstBnI35bdSBJfP",
+        "type": "PageSwitch",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "property": "userAuth",
+        "propertyType": "bh.local",
+        "propertyGv": "bh.local.userAuth",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "functionName": "sd_mcstBnI35bdSBJfP",
+        "category": "Function",
+        "x": 565,
+        "y": 180,
+        "wires": [
+            [
+                "sd_pIZAacNNbBeuSqnZ"
+            ],
+            [
+                "sd_gLItpJWml1Jg5D8S"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homepageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_gLItpJWml1Jg5D8S",
+        "type": "Navigation",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "path": "/login",
+        "pathMap": "",
+        "pathparams": "",
+        "pathparamsMap": "",
+        "qparams": "",
+        "qparamsMap": "",
+        "qparamsArray": "",
+        "resultMapping": "",
+        "functionName": "sd_gLItpJWml1Jg5D8S",
+        "category": "Navigation",
+        "x": 665,
+        "y": 240,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homepageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_ltXP1eujasX7ySQ2",
+        "type": "Catch",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "errorCatcher",
+        "selectedNodes": "all-nodes",
+        "selectCatchType": "allnodes",
+        "masternodeList": "",
+        "ignoreList": [
+            "sd_QwnEFKDcLelEp36h"
+        ],
+        "functionName": "errorCatcher",
+        "category": "General",
+        "x": 45,
+        "y": 40,
+        "wires": [
+            [
+                "sd_QwnEFKDcLelEp36h"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "homepageComponent"
+    },
+    {
+        "id": "sd_QwnEFKDcLelEp36h",
+        "type": "Log",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 0,
+        "logObject": "bh.error",
+        "functionName": "sd_QwnEFKDcLelEp36h",
+        "category": "General",
+        "x": 145,
+        "y": 40,
+        "wires": [],
+        "__ssdTypeInputs__": {
+            "logObject": {
+                "type": "bh",
+                "value": "error",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homepageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_1BvEOULPDUdkr9bQ",
+        "type": "UseDependency",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "system",
+        "propertyType": "bh",
+        "propertyGv": "bh.system",
+        "alias": "system",
+        "modules": [
+            {
+                "textIp": "signOut",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "signOut"
+                },
+                "injectable": false
+            }
+        ],
+        "import_all": false,
+        "library": "firebase/auth",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_1BvEOULPDUdkr9bQ",
+        "category": "Function",
+        "x": 125,
+        "y": 180,
+        "wires": [
+            [
+                "sd_CrsKJuswP0X5q6ER"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homepageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_RHb4lidnggpijVGr",
+        "type": "Script",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.userAuth=false\nif(page.auth.currentUser){\nbh.local.userAuth=true\n}\n\n",
+        "functionName": "sd_RHb4lidnggpijVGr",
+        "category": "Function",
+        "x": 485,
+        "y": 180,
+        "wires": [
+            [
+                "sd_mcstBnI35bdSBJfP"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homepageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_M3H6SKf0JNH4EvtB",
+        "type": "PageStart",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "signOut",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "signOut",
+        "category": "General",
+        "x": 485,
+        "y": 280,
+        "wires": [
+            [
+                "sd_E4lV15uYE91cgxs4"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "homepageComponent"
+    },
+    {
+        "id": "sd_E4lV15uYE91cgxs4",
+        "type": "Script",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.signOut(page.auth)\n    .then(() => {\n      console.log('User logged out');\n    })\n    .catch((error) => {\n      console.error('Error logging out:', error.message);\n    });",
+        "functionName": "sd_E4lV15uYE91cgxs4",
+        "category": "Function",
+        "x": 565,
+        "y": 280,
+        "wires": [
+            [
+                "sd_gLItpJWml1Jg5D8S"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homepageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_CrsKJuswP0X5q6ER",
+        "type": "UseDependency",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "ref",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "ref"
+                },
+                "injectable": false
+            },
+            {
+                "textIp": "onValue",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "onValue"
+                },
+                "injectable": false
+            },
+            {
+                "textIp": "set",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "set"
+                },
+                "injectable": false
+            }
+        ],
+        "import_all": false,
+        "library": "firebase/database",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_CrsKJuswP0X5q6ER",
+        "category": "Function",
+        "x": 225,
+        "y": 180,
+        "wires": [
+            [
+                "sd_cMvPHZ1tArBApdqv"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homepageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_pIZAacNNbBeuSqnZ",
+        "type": "Script",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "const chatsRef = page.ref(page.database, 'chats');\nbh.local.messages=[]\n\nfunction handleNewMessages(snapshot) {\n  const data = snapshot.val();\n  const chats = [];\n\n  for (const id in data) {\n    if (!chats.map(chat => chat.id).includes(id)) {\n      const chatMessage = data[id];\n      chatMessage.formattedTimestamp = formatDynamicDate(chatMessage.timestamp);\n      chats.push(chatMessage);\n    }\n  }\n\n  chats.sort((a, b) => {\n    const timestampA = new Date(a.timestamp).getTime();\n    const timestampB = new Date(b.timestamp).getTime();\n    return timestampA - timestampB;\n  });\n\n  page.messageData = chats;\n}\n\nfunction formatDynamicDate(dateString) {\n\n  const originalDate = new Date(dateString);\n  const formattedDate = new Intl.DateTimeFormat('en-US', {\n    month: '2-digit',\n    day: '2-digit',\n    year: '2-digit',\n    hour: 'numeric',\n    minute: 'numeric',\n  }).format(originalDate);\n  return formattedDate.replace(', ', ' - ');\n}\n\n\npage.onValue(chatsRef, (snapshot) => {\n  handleNewMessages(snapshot);\n});\n\n",
+        "functionName": "sd_pIZAacNNbBeuSqnZ",
+        "category": "Function",
+        "x": 665,
+        "y": 100,
+        "wires": [
+            [
+                "sd_IUpMGsk8dIdWM5t8"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homepageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_tKUXdeDc6gNq3Yo5",
+        "type": "PageServiceVariables",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "get",
+        "globalVariables": [
+            {
+                "textIp": "database",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "database"
+                }
+            },
+            {
+                "textIp": "auth",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "auth"
+                }
+            }
+        ],
+        "functionName": "sd_tKUXdeDc6gNq3Yo5",
+        "service": {
+            "id": "sd_JS5Dsros0oI2Z1OR",
+            "type": "tab",
+            "createdDate": "2023-12-13T06:07:56.797Z",
+            "label": "initializeFirebase",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0,
+            "tabType": "client",
+            "generateNext": true,
+            "serviceName": "initializeFirebase",
+            "relativeParentPath": "",
+            "_def": {
+                "defaults": {
+                    "label": {
+                        "value": ""
+                    },
+                    "disabled": {
+                        "value": false
+                    },
+                    "info": {
+                        "value": ""
+                    }
+                }
+            }
+        },
+        "serviceImportPath": "app/sd-services/initializeFirebase",
+        "category": "Function",
+        "x": 405,
+        "y": 180,
+        "wires": [
+            [
+                "sd_RHb4lidnggpijVGr"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homepageComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_cMvPHZ1tArBApdqv",
+        "type": "PageCallService",
+        "z": "sd_5xSKahYNCee8L1zx",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "fireBase",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_JS5Dsros0oI2Z1OR",
+            "type": "tab",
+            "createdDate": "2023-12-13T06:07:56.797Z",
+            "label": "initializeFirebase",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0,
+            "tabType": "client"
+        },
+        "flow": {
+            "flowId": "sd_pkDWKoHTEsjQJSYh",
+            "flowName": "sd_pkDWKoHTEsjQJSYh"
+        },
+        "inputVariables": [],
+        "outputMapping": [],
+        "serviceImportPath": "app/sd-services/initializeFirebase",
+        "startName": "sd_pkDWKoHTEsjQJSYh",
+        "inputParams": [],
+        "accept_bh": "",
+        "accept_csd": true,
+        "functionName": "fireBase",
+        "category": "General",
+        "x": 325,
+        "y": 180,
+        "wires": [
+            [
+                "sd_tKUXdeDc6gNq3Yo5"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homepageComponent",
+        "generated": true
+    }
+]

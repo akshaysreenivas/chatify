@@ -1,0 +1,26 @@
+{
+    "routes": [
+        {
+            "component": "homepageComponent",
+            "path": "home"
+        },
+        {
+            "path": "login",
+            "component": "loginComponent"
+        },
+        {
+            "path": "signup",
+            "component": "signupComponent"
+        },
+        {
+            "path": "''",
+            "redirectTo": "home",
+            "pathMatch": "full",
+            "default": true
+        },
+        {
+            "path": "**",
+            "component": "PageNotFoundComponent"
+        }
+    ]
+}

@@ -1,0 +1,437 @@
+{
+    "neutrinos-all-default-nodes-plugin": {
+        "name": "neutrinos-all-default-nodes-plugin",
+        "default": true,
+        "deps": {
+            "ndefault-all-nodes": {
+                "name": "ndefault-all-nodes",
+                "packageType": "studio-nodes",
+                "nodes": {
+                    "server": [
+                        "ChildProcess",
+                        "CORS",
+                        "DBConfig",
+                        "GlobalMiddlewareEnd",
+                        "GlobalMiddlewareStart",
+                        "GlobalNext",
+                        "HttpIn",
+                        "HttpOut",
+                        "HttpProxyConfig",
+                        "ServerHttpRequest",
+                        "MiddlewareEnd",
+                        "MiddlewareStart",
+                        "Next",
+                        "RouteMiddlewareEnd",
+                        "RouteMiddlewareStart",
+                        "ServerLog",
+                        "TLSConfig",
+                        "Processor"
+                    ],
+                    "common": [
+                        "Catch",
+                        "Comments",
+                        "Script",
+                        "Unknown"
+                    ],
+                    "pages": [
+                        "PageCallService",
+                        "PageStart",
+                        "PageSwitch",
+                        "ViewPicker",
+                        "PageVariables",
+                        "PageServiceVariables",
+                        "PageAsync"
+                    ],
+                    "client-server": [
+                        "ServiceVariables",
+                        "CallService",
+                        "Start",
+                        "Switch",
+                        "Async"
+                    ],
+                    "client-pages": [
+                        "Environment",
+                        "HttpRequest",
+                        "Log",
+                        "Navigation",
+                        "SnackBar",
+                        "Storage",
+                        "CallSSDApi",
+                        "UseDependency",
+                        "neutrinos-ngzone"
+                    ],
+                    "client": [
+                        "CanActivate",
+                        "CanDeactivate",
+                        "Resolve"
+                    ]
+                }
+            }
+        },
+        "parentDeps": {}
+    },
+    "ndefault-all-nodes": {
+        "name": "ndefault-all-nodes",
+        "packageType": "studio-nodes",
+        "deps": {},
+        "parentDeps": {
+            "neutrinos-all-default-nodes-plugin": true
+        },
+        "nodes": {
+            "server": [
+                "ChildProcess",
+                "CORS",
+                "DBConfig",
+                "GlobalMiddlewareEnd",
+                "GlobalMiddlewareStart",
+                "GlobalNext",
+                "HttpIn",
+                "HttpOut",
+                "HttpProxyConfig",
+                "ServerHttpRequest",
+                "MiddlewareEnd",
+                "MiddlewareStart",
+                "Next",
+                "RouteMiddlewareEnd",
+                "RouteMiddlewareStart",
+                "ServerLog",
+                "TLSConfig",
+                "Processor"
+            ],
+            "common": [
+                "Catch",
+                "Comments",
+                "Script",
+                "Unknown"
+            ],
+            "pages": [
+                "PageCallService",
+                "PageStart",
+                "PageSwitch",
+                "ViewPicker",
+                "PageVariables",
+                "PageServiceVariables",
+                "PageAsync"
+            ],
+            "client-server": [
+                "ServiceVariables",
+                "CallService",
+                "Start",
+                "Switch",
+                "Async"
+            ],
+            "client-pages": [
+                "Environment",
+                "HttpRequest",
+                "Log",
+                "Navigation",
+                "SnackBar",
+                "Storage",
+                "CallSSDApi",
+                "UseDependency",
+                "neutrinos-ngzone"
+            ],
+            "client": [
+                "CanActivate",
+                "CanDeactivate",
+                "Resolve"
+            ]
+        }
+    },
+    "neutrinos-internet": {
+        "name": "neutrinos-internet",
+        "version": "1.0.0",
+        "default": true,
+        "deps": {
+            "neutrinos-internet": {
+                "name": "neutrinos-internet",
+                "version": "1.0.0",
+                "packageType": "studio-nodes",
+                "nodes": {
+                    "client-pages": [
+                        {
+                            "name": "09116728-8c4c-739f-c7da-625634afe918",
+                            "displayName": "On Online"
+                        },
+                        {
+                            "name": "c6ef8916-35f2-a758-e8d5-8b61fdac762d",
+                            "displayName": "On Offline"
+                        },
+                        {
+                            "name": "9f050d9a-4bf7-fc9b-6e14-cf39e33ead30",
+                            "displayName": "isOnline"
+                        }
+                    ]
+                }
+            }
+        },
+        "parentDeps": {
+            "neutrinos-internet": "1.0.0"
+        }
+    },
+    "neutrinos-lifecycle-events": {
+        "name": "neutrinos-lifecycle-events",
+        "version": "1.0.0",
+        "default": true,
+        "deps": {
+            "neutrinos-lifecycle-events": {
+                "name": "neutrinos-lifecycle-events",
+                "version": "1.0.0",
+                "packageType": "studio-nodes",
+                "nodes": {
+                    "pages": [
+                        {
+                            "name": "OnChanges",
+                            "displayName": "On Changes"
+                        },
+                        {
+                            "name": "OnInit",
+                            "displayName": "On Init"
+                        },
+                        {
+                            "name": "DoCheck",
+                            "displayName": "Do Check"
+                        },
+                        {
+                            "name": "AfterContentInit",
+                            "displayName": "After Content Init"
+                        },
+                        {
+                            "name": "AfterContentChecked",
+                            "displayName": "After Content Checked"
+                        },
+                        {
+                            "name": "AfterViewInit",
+                            "displayName": "After View Init"
+                        },
+                        {
+                            "name": "AfterViewChecked",
+                            "displayName": "After View Checked"
+                        },
+                        {
+                            "name": "OnDestroy",
+                            "displayName": "On Destroy"
+                        }
+                    ]
+                }
+            }
+        },
+        "parentDeps": {
+            "neutrinos-lifecycle-events": "1.0.0"
+        }
+    },
+    "neutrinos-dialog": {
+        "name": "neutrinos-dialog",
+        "version": "1.0.0",
+        "default": true,
+        "deps": {
+            "neutrinos-dialog": {
+                "name": "neutrinos-dialog",
+                "version": "1.0.0",
+                "packageType": "studio-nodes",
+                "nodes": {
+                    "pages": [
+                        {
+                            "name": "GetDialogData",
+                            "displayName": "Get Dialog Data"
+                        },
+                        {
+                            "name": "CloseDialog",
+                            "displayName": "Close Dialog"
+                        }
+                    ],
+                    "client-pages": [
+                        {
+                            "name": "OpenDialog",
+                            "displayName": "Open Dialog"
+                        }
+                    ]
+                }
+            }
+        },
+        "parentDeps": {
+            "neutrinos-dialog": "1.0.0"
+        }
+    },
+    "neutrinos-listener": {
+        "name": "neutrinos-listener",
+        "version": "1.0.0",
+        "default": true,
+        "deps": {
+            "neutrinos-listener": {
+                "name": "neutrinos-listener",
+                "version": "1.0.0",
+                "packageType": "studio-nodes",
+                "nodes": {
+                    "pages": [
+                        {
+                            "name": "HostListener",
+                            "displayName": "Host Listener"
+                        }
+                    ]
+                }
+            }
+        },
+        "parentDeps": {
+            "neutrinos-listener": "1.0.0"
+        }
+    },
+    "neutrinos-output": {
+        "name": "neutrinos-output",
+        "version": "1.0.0",
+        "default": true,
+        "deps": {
+            "neutrinos-output": {
+                "name": "neutrinos-output",
+                "version": "1.0.0",
+                "packageType": "studio-nodes",
+                "nodes": {
+                    "pages": [
+                        {
+                            "name": "Output",
+                            "displayName": "Output"
+                        }
+                    ]
+                }
+            }
+        },
+        "parentDeps": {
+            "neutrinos-output": "1.0.0"
+        }
+    },
+    "neutrinos-route": {
+        "name": "neutrinos-route",
+        "version": "1.0.0",
+        "default": true,
+        "deps": {
+            "neutrinos-route": {
+                "name": "neutrinos-route",
+                "version": "1.0.0",
+                "packageType": "studio-nodes",
+                "nodes": {
+                    "pages": [
+                        {
+                            "name": "NavigationListener",
+                            "displayName": "Navigation Listener"
+                        },
+                        {
+                            "name": "NavigationData",
+                            "displayName": "Navigation Data"
+                        }
+                    ]
+                }
+            }
+        },
+        "parentDeps": {
+            "neutrinos-route": "1.0.0"
+        }
+    },
+    "neutrinos-pwa-firebase": {
+        "name": "neutrinos-pwa-firebase",
+        "version": "1.0.0",
+        "deps": {
+            "neutrinos-pwa-firebase": {
+                "name": "neutrinos-pwa-firebase",
+                "version": "1.0.0",
+                "packageType": "studio-nodes",
+                "nodes": {
+                    "client": [
+                        {
+                            "name": "e2d945fe-eb02-f09d-4d71-81ce05f2e103",
+                            "displayName": "FCM Subscribe",
+                            "dependencies": [
+                                {
+                                    "name": "@angular/pwa",
+                                    "version": "13.3.8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "e60b2f2f-ed8e-32a1-e724-ae3bd76c96f4",
+                            "displayName": "On FCM Subscribe",
+                            "dependencies": [
+                                {
+                                    "name": "@angular/pwa",
+                                    "version": "13.3.8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "d4ec9910-c1f1-11e0-13cc-4f839ff96a72",
+                            "displayName": "FCM Unsubscribe",
+                            "dependencies": [
+                                {
+                                    "name": "@angular/pwa",
+                                    "version": "13.3.8"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "parentDeps": {
+            "neutrinos-pwa-firebase": "1.0.0"
+        }
+    },
+    "neutrinos-pwa-sw-events": {
+        "name": "neutrinos-pwa-sw-events",
+        "version": "1.0.0",
+        "deps": {
+            "neutrinos-pwa-sw-events": {
+                "name": "neutrinos-pwa-sw-events",
+                "version": "1.0.0",
+                "packageType": "studio-nodes",
+                "nodes": {
+                    "client": [
+                        {
+                            "name": "0dc4c884-7b8a-0ecc-f4d7-b870622e3e00",
+                            "displayName": "Update Available"
+                        },
+                        {
+                            "name": "45621a11-65b2-9858-2b25-9379e7156b5d",
+                            "displayName": "Activate Update",
+                            "dependencies": [
+                                {
+                                    "name": "@angular/pwa",
+                                    "version": "13.3.8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "46cb8c62-b269-a538-af80-a4b51e575014",
+                            "displayName": "Check For Update"
+                        },
+                        {
+                            "name": "f412baa9-d069-e201-3526-023f8858abd7",
+                            "displayName": "Is SW Registered?"
+                        },
+                        {
+                            "name": "2d5bdb2d-08cf-f76a-eb02-9f6b36f60c43",
+                            "displayName": "On Notification",
+                            "dependencies": [
+                                {
+                                    "name": "@angular/pwa",
+                                    "version": "13.3.8"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "e9c0942f-a2b9-0149-93b6-3282f8feb5f9",
+                            "displayName": "On Notification Click",
+                            "dependencies": [
+                                {
+                                    "name": "@angular/pwa",
+                                    "version": "13.3.8"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "parentDeps": {
+            "neutrinos-pwa-sw-events": "1.0.0"
+        }
+    }
+}

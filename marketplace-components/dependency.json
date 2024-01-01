@@ -1,0 +1,419 @@
+{
+    "packages": [
+        {
+            "name": "neutrinos-all-default-nodes-plugin",
+            "default": true,
+            "visible": false,
+            "dependencies": [
+                {
+                    "name": "ndefault-all-nodes",
+                    "packageType": "studio-nodes",
+                    "nodes": {
+                        "server": [
+                            "ChildProcess",
+                            "CORS",
+                            "DBConfig",
+                            "GlobalMiddlewareEnd",
+                            "GlobalMiddlewareStart",
+                            "GlobalNext",
+                            "HttpIn",
+                            "HttpOut",
+                            "HttpProxyConfig",
+                            "ServerHttpRequest",
+                            "MiddlewareEnd",
+                            "MiddlewareStart",
+                            "Next",
+                            "RouteMiddlewareEnd",
+                            "RouteMiddlewareStart",
+                            "ServerLog",
+                            "TLSConfig",
+                            "Processor"
+                        ],
+                        "common": [
+                            "Catch",
+                            "Comments",
+                            "Script",
+                            "Unknown"
+                        ],
+                        "pages": [
+                            "PageCallService",
+                            "PageStart",
+                            "PageSwitch",
+                            "ViewPicker",
+                            "PageVariables",
+                            "PageServiceVariables",
+                            "PageAsync"
+                        ],
+                        "client-server": [
+                            "ServiceVariables",
+                            "CallService",
+                            "Start",
+                            "Switch",
+                            "Async"
+                        ],
+                        "client-pages": [
+                            "Environment",
+                            "HttpRequest",
+                            "Log",
+                            "Navigation",
+                            "SnackBar",
+                            "Storage",
+                            "CallSSDApi",
+                            "UseDependency",
+                            "neutrinos-ngzone"
+                        ],
+                        "client": [
+                            "CanActivate",
+                            "CanDeactivate",
+                            "Resolve"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "devid": "165010b2-9099-5b62-6926-9a6962e22ba6",
+            "name": "neutrinos-internet",
+            "displayName": "Internet",
+            "version": "1.0.0",
+            "default": true,
+            "username": "avinash.gupta@neutrinos.co",
+            "publisher": "Neutrinos",
+            "platformSupportVersion": {
+                "min": "7.7.0"
+            },
+            "description": "Client Side Designer node to check internet connectivity.",
+            "pluginImage": "",
+            "dependencies": [
+                {
+                    "name": "neutrinos-internet",
+                    "displayName": "Internet",
+                    "packageType": "studio-nodes",
+                    "version": "1.0.0",
+                    "nodes": {
+                        "client-pages": [
+                            {
+                                "name": "09116728-8c4c-739f-c7da-625634afe918",
+                                "displayName": "On Online"
+                            },
+                            {
+                                "name": "c6ef8916-35f2-a758-e8d5-8b61fdac762d",
+                                "displayName": "On Offline"
+                            },
+                            {
+                                "name": "9f050d9a-4bf7-fc9b-6e14-cf39e33ead30",
+                                "displayName": "isOnline"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "devid": "68bc9eec-a2fc-bccd-1630-883e4552c3eb",
+            "name": "neutrinos-lifecycle-events",
+            "displayName": "Lifecycle Events",
+            "version": "1.0.0",
+            "username": "avinash.gupta@neutrinos.co",
+            "publisher": "Neutrinos",
+            "default": true,
+            "visible": false,
+            "platformSupportVersion": {
+                "min": "7.8.0"
+            },
+            "dependencies": [
+                {
+                    "name": "neutrinos-lifecycle-events",
+                    "displayName": "Lifecycle Events",
+                    "packageType": "studio-nodes",
+                    "version": "1.0.0",
+                    "nodes": {
+                        "pages": [
+                            {
+                                "name": "OnChanges",
+                                "displayName": "On Changes"
+                            },
+                            {
+                                "name": "OnInit",
+                                "displayName": "On Init"
+                            },
+                            {
+                                "name": "DoCheck",
+                                "displayName": "Do Check"
+                            },
+                            {
+                                "name": "AfterContentInit",
+                                "displayName": "After Content Init"
+                            },
+                            {
+                                "name": "AfterContentChecked",
+                                "displayName": "After Content Checked"
+                            },
+                            {
+                                "name": "AfterViewInit",
+                                "displayName": "After View Init"
+                            },
+                            {
+                                "name": "AfterViewChecked",
+                                "displayName": "After View Checked"
+                            },
+                            {
+                                "name": "OnDestroy",
+                                "displayName": "On Destroy"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "devid": "1dd8ed79-2f61-798f-0570-c8b153987b2c",
+            "name": "neutrinos-dialog",
+            "displayName": "Dialog",
+            "version": "1.0.0",
+            "username": "avinash.gupta@neutrinos.co",
+            "publisher": "Neutrinos",
+            "platformSupportVersion": {
+                "min": "7.8.0"
+            },
+            "default": true,
+            "visible": false,
+            "dependencies": [
+                {
+                    "name": "neutrinos-dialog",
+                    "displayName": "Dialog",
+                    "packageType": "studio-nodes",
+                    "version": "1.0.0",
+                    "nodes": {
+                        "pages": [
+                            {
+                                "name": "GetDialogData",
+                                "displayName": "Get Dialog Data"
+                            },
+                            {
+                                "name": "CloseDialog",
+                                "displayName": "Close Dialog"
+                            }
+                        ],
+                        "client-pages": [
+                            {
+                                "name": "OpenDialog",
+                                "displayName": "Open Dialog"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "neutrinos-listener",
+            "displayName": "HostListener",
+            "version": "1.0.0",
+            "username": "avinash.gupta@neutrinos.co",
+            "publisher": "Neutrinos",
+            "platformSupportVersion": {
+                "min": "7.8.0"
+            },
+            "default": true,
+            "visible": false,
+            "dependencies": [
+                {
+                    "name": "neutrinos-listener",
+                    "displayName": "HostListener",
+                    "packageType": "studio-nodes",
+                    "version": "1.0.0",
+                    "nodes": {
+                        "pages": [
+                            {
+                                "name": "HostListener",
+                                "displayName": "Host Listener"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "neutrinos-output",
+            "displayName": "Output",
+            "version": "1.0.0",
+            "username": "avinash.gupta@neutrinos.co",
+            "publisher": "Neutrinos",
+            "default": true,
+            "visible": true,
+            "platformSupportVersion": {
+                "min": "7.8.0"
+            },
+            "dependencies": [
+                {
+                    "name": "neutrinos-output",
+                    "displayName": "Output",
+                    "packageType": "studio-nodes",
+                    "version": "1.0.0",
+                    "nodes": {
+                        "pages": [
+                            {
+                                "name": "Output",
+                                "displayName": "Output"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "neutrinos-route",
+            "displayName": "Route",
+            "version": "1.0.0",
+            "username": "avinash.gupta@neutrinos.co",
+            "publisher": "Neutrinos",
+            "default": true,
+            "visible": true,
+            "platformSupportVersion": {
+                "min": "8.1.0"
+            },
+            "dependencies": [
+                {
+                    "name": "neutrinos-route",
+                    "displayName": "Route",
+                    "packageType": "studio-nodes",
+                    "version": "1.0.0",
+                    "nodes": {
+                        "pages": [
+                            {
+                                "name": "NavigationListener",
+                                "displayName": "Navigation Listener"
+                            },
+                            {
+                                "name": "NavigationData",
+                                "displayName": "Navigation Data"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "neutrinos-pwa-firebase",
+            "displayName": "PWA Firebase",
+            "version": "1.0.0",
+            "username": "avinash.gupta@neutrinos.co",
+            "publisher": "Neutrinos",
+            "description": "A Server Designer Nodes bundle to consume PWA Notifications.",
+            "isWorkspacePlugin": true,
+            "dependencies": [
+                {
+                    "name": "neutrinos-pwa-firebase",
+                    "displayName": "PWA Firebase",
+                    "packageType": "studio-nodes",
+                    "version": "1.0.0",
+                    "nodes": {
+                        "client": [
+                            {
+                                "name": "e2d945fe-eb02-f09d-4d71-81ce05f2e103",
+                                "displayName": "FCM Subscribe",
+                                "dependencies": [
+                                    {
+                                        "name": "@angular/pwa",
+                                        "version": "13.3.8"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "e60b2f2f-ed8e-32a1-e724-ae3bd76c96f4",
+                                "displayName": "On FCM Subscribe",
+                                "dependencies": [
+                                    {
+                                        "name": "@angular/pwa",
+                                        "version": "13.3.8"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "d4ec9910-c1f1-11e0-13cc-4f839ff96a72",
+                                "displayName": "FCM Unsubscribe",
+                                "dependencies": [
+                                    {
+                                        "name": "@angular/pwa",
+                                        "version": "13.3.8"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "packageDependencies": {
+                        "@angular/pwa": "13.3.8"
+                    }
+                }
+            ],
+            "type": "Components"
+        },
+        {
+            "name": "neutrinos-pwa-sw-events",
+            "displayName": "PWA SW Events",
+            "version": "1.0.0",
+            "username": "avinash.gupta@neutrinos.co",
+            "publisher": "Neutrinos",
+            "description": "A Server Designer Nodes bundle to consume PWA Updates.",
+            "isWorkspacePlugin": true,
+            "dependencies": [
+                {
+                    "name": "neutrinos-pwa-sw-events",
+                    "displayName": "PWA SW Events",
+                    "packageType": "studio-nodes",
+                    "version": "1.0.0",
+                    "nodes": {
+                        "client": [
+                            {
+                                "name": "0dc4c884-7b8a-0ecc-f4d7-b870622e3e00",
+                                "displayName": "Update Available"
+                            },
+                            {
+                                "name": "45621a11-65b2-9858-2b25-9379e7156b5d",
+                                "displayName": "Activate Update",
+                                "dependencies": [
+                                    {
+                                        "name": "@angular/pwa",
+                                        "version": "13.3.8"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "46cb8c62-b269-a538-af80-a4b51e575014",
+                                "displayName": "Check For Update"
+                            },
+                            {
+                                "name": "f412baa9-d069-e201-3526-023f8858abd7",
+                                "displayName": "Is SW Registered?"
+                            },
+                            {
+                                "name": "2d5bdb2d-08cf-f76a-eb02-9f6b36f60c43",
+                                "displayName": "On Notification",
+                                "dependencies": [
+                                    {
+                                        "name": "@angular/pwa",
+                                        "version": "13.3.8"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "e9c0942f-a2b9-0149-93b6-3282f8feb5f9",
+                                "displayName": "On Notification Click",
+                                "dependencies": [
+                                    {
+                                        "name": "@angular/pwa",
+                                        "version": "13.3.8"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "packageDependencies": {
+                        "@angular/pwa": "13.3.8"
+                    }
+                }
+            ],
+            "type": "Components"
+        }
+    ]
+}

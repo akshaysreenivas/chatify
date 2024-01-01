@@ -1,0 +1,14 @@
+{
+    "displayName": "chatify",
+    "appName": "chatify",
+    "description": "chating app",
+    "lastModified": "2023-12-01T10:15:11.391Z",
+    "imgSourcePath": "",
+    "version": "1.0.0",
+    "appType": "uiOnly",
+    "templateName": "blank",
+    "createDate": "2023-12-01T10:15:10.955Z",
+    "analyticsId": "092508d8-3d1e-7015-aa55-3709c5931401",
+    "createdStudioVersion": "9.2.1",
+    "isPwa": true
+}

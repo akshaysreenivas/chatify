@@ -1,0 +1,37 @@
+<div fxLayout="row wrap" class="app-container" fxLayoutAlign="start center" [fxShow]="true">
+  <div fxLayout="column " class="chat-list-container" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column " class="chat-list-header" fxLayoutAlign="none none" [fxShow]="true">
+      <h2>
+        Chat List</h2>
+    </div>
+    <div fxLayout="column " class="chat-list" fxLayoutAlign="none none" [fxShow]="true">
+      <div fxLayout="row wrap" class="chat-item" fxLayoutAlign="start stretch" [fxShow]="true" *ngFor="let chat of page.chatList"><img [src]="chat.avatar" alt="firends avatar" class="avatar">
+        <div class="chat-info">
+          <h3>{{chat.friendName}}</h3>
+          <p>{{chat.lastMessagePreview}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="column " class="chat-container" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="row " class="chat-header" fxLayoutAlign="space-between center" [fxShow]="true">
+      <div style="display:flex;align-items:center;gap:5px">
+        <img [src]="&apos;https://firebasestorage.googleapis.com/v0/b/chatify-98464.appspot.com/o/default.jpg?alt=media&amp;token=025d910a-6219-4a60-abbe-298c8488f4d1&apos;" alt="Friend Avatar" class="user-avatar" artImgSrc><!-- <h2>{{page.data.userName}}</h2> -->
+        <h2>Tesla</h2>
+        {{page.name}}
+      </div><mat-icon style="margin:10px ; cursor:pointer" (click)="signOut()">exit_to_app</mat-icon>
+    </div>
+    <div fxLayout="column " class="chat-messages" fxLayoutAlign="none none" [fxShow]="true" id="messageContainer">
+      <div *ngFor="let item of page.messageData" class="message">
+        <time class="time">{{item.formattedTimestamp}}</time>
+        <p>{{item.message}}</p>
+      </div>
+    </div>
+    <div fxLayout="row " style="gap:10px" class="chat-input-box" fxLayoutAlign="space-between center" [fxShow]="true">
+      <mat-form-field style="width:100% ; " class="chat-input" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;never&apos;" [hideRequiredMarker]="false">
+        <input matInput [(ngModel)]="page.newMessage" name="newMessage" placeholder="Type your message..." [required]="false" id="chatInput">
+
+      </mat-form-field><mat-icon style=" border-radius: 50%;   cursor: pointer;   width: 50px;   height: 50px;   padding: 3px;   align-items: center;   display: flex;   justify-content: center;  " class="message-sent-btn" (click)="sentMessage()">send</mat-icon>
+    </div>
+  </div>
+</div>

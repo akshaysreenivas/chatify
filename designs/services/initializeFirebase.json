@@ -1,0 +1,332 @@
+[
+    {
+        "id": "sd_JS5Dsros0oI2Z1OR",
+        "type": "tab",
+        "createdDate": "2023-12-13T06:07:56.797Z",
+        "label": "initializeFirebase",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "tabType": "client",
+        "generateNext": true,
+        "serviceName": "initializeFirebase",
+        "relativeParentPath": ""
+    },
+    {
+        "id": "sd_pkDWKoHTEsjQJSYh",
+        "type": "Start",
+        "z": "sd_JS5Dsros0oI2Z1OR",
+        "viewType": "client-server",
+        "nodeType": "start",
+        "name": "",
+        "outputs": 1,
+        "accept_bh": "",
+        "functionName": "sd_pkDWKoHTEsjQJSYh",
+        "category": "General",
+        "x": 45,
+        "y": 100,
+        "wires": [
+            [
+                "sd_dPEVHktOtMlF3Ljx"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "initializeFirebase"
+    },
+    {
+        "id": "sd_dPEVHktOtMlF3Ljx",
+        "type": "UseDependency",
+        "z": "sd_JS5Dsros0oI2Z1OR",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "firebase-app",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "initializeApp",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": "initializeApp"
+                },
+                "injectable": false
+            }
+        ],
+        "import_all": false,
+        "library": "firebase/app",
+        "serviceDesignerType": "client",
+        "functionName": "firebaseApp",
+        "category": "Function",
+        "x": 125,
+        "y": 100,
+        "wires": [
+            [
+                "sd_96OwiYw2qPPZCaQa"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "initializeFirebase",
+        "generated": true
+    },
+    {
+        "id": "sd_SsHFvXLOXaaTS7UL",
+        "type": "Environment",
+        "z": "sd_JS5Dsros0oI2Z1OR",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "envMaps": [
+            {
+                "flowVar": {
+                    "type": "bh.local",
+                    "value": "apiKey"
+                },
+                "envProperty": "FIREBASE_API_KEY"
+            },
+            {
+                "flowVar": {
+                    "type": "bh.local",
+                    "value": "authDomain"
+                },
+                "envProperty": "FIREBASE_AUTH_DOMAIN"
+            },
+            {
+                "flowVar": {
+                    "type": "bh.local",
+                    "value": "databaseURL"
+                },
+                "envProperty": "FIREBASE_DB_URL"
+            },
+            {
+                "flowVar": {
+                    "type": "bh.local",
+                    "value": "projectId"
+                },
+                "envProperty": "FIREBASE_PROJECT_ID"
+            },
+            {
+                "flowVar": {
+                    "type": "bh.local",
+                    "value": "storageBucket"
+                },
+                "envProperty": "FIREBASE_STORAGE_BUCKET"
+            },
+            {
+                "flowVar": {
+                    "type": "bh.local",
+                    "value": "messagingSenderId"
+                },
+                "envProperty": "FIREBASE_MESSAGING_CENTER_ID"
+            },
+            {
+                "flowVar": {
+                    "type": "bh.local",
+                    "value": "appId"
+                },
+                "envProperty": "FIREBASE_APP_ID"
+            },
+            {
+                "flowVar": {
+                    "type": "bh.local",
+                    "value": "measurementId"
+                },
+                "envProperty": "FIREBASE_MEASUREMENT_ID"
+            }
+        ],
+        "functionName": "sd_SsHFvXLOXaaTS7UL",
+        "category": "General",
+        "x": 405,
+        "y": 100,
+        "wires": [
+            [
+                "sd_yy2fAXD3bIMl4v2S"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "initializeFirebase",
+        "generated": true
+    },
+    {
+        "id": "sd_yy2fAXD3bIMl4v2S",
+        "type": "Script",
+        "z": "sd_JS5Dsros0oI2Z1OR",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.firebaseConfig = {\n  apiKey: bh.local.apiKey,\n  authDomain: bh.local.authDomain,\n  databaseURL: bh.local.databaseURL,\n  projectId: bh.local.projectId,\n  storageBucket: bh.local.storageBucket,\n  messagingSenderId: bh.local.messagingSenderId,\n  appId: bh.local.appId,\n  measurementId: bh.local.measurementId\n};\nbh.app = await bh.initializeApp(bh.local.firebaseConfig)\nconsole.log(bh.app)\nbh.auth = await bh.getAuth(bh.app);\nbh.database = bh.getDatabase(bh.app);\n\n\n",
+        "functionName": "sd_yy2fAXD3bIMl4v2S",
+        "category": "Function",
+        "x": 485,
+        "y": 100,
+        "wires": [
+            [
+                "sd_KFgG9ytvpwTakRVB"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "initializeFirebase",
+        "generated": true
+    },
+    {
+        "id": "sd_sB6Etb4EXXJP4Nn4",
+        "type": "Script",
+        "z": "sd_JS5Dsros0oI2Z1OR",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "const chatsRef = bh.ref(bh.database, 'chats');\nbh.local.messages=[]\n\nfunction handleNewMessages(snapshot) {\n  const data = snapshot.val();\n  const chats = [];\n\n  for (const id in data) {\n    if (!chats.map(chat => chat.id).includes(id)) {\n      const chatMessage = data[id];\n      chatMessage.formattedTimestamp = formatDynamicDate(chatMessage.timestamp);\n      chats.push(chatMessage);\n    }\n  }\n\n  chats.sort((a, b) => {\n    const timestampA = new Date(a.timestamp).getTime();\n    const timestampB = new Date(b.timestamp).getTime();\n    return timestampA - timestampB;\n  });\n\n  bh.messageData = chats;\n}\n\nfunction formatDynamicDate(dateString) {\n\n  const originalDate = new Date(dateString);\n  const formattedDate = new Intl.DateTimeFormat('en-US', {\n    month: '2-digit',\n    day: '2-digit',\n    year: '2-digit',\n    hour: 'numeric',\n    minute: 'numeric',\n  }).format(originalDate);\n  return formattedDate.replace(', ', ' - ');\n}\n\n\n// ...\n\nbh.onValue(chatsRef, (snapshot) => {\n  handleNewMessages(snapshot);\n});\n\n",
+        "functionName": "sd_sB6Etb4EXXJP4Nn4",
+        "category": "Function",
+        "x": 465,
+        "y": 300,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "initializeFirebase"
+    },
+    {
+        "id": "sd_96OwiYw2qPPZCaQa",
+        "type": "UseDependency",
+        "z": "sd_JS5Dsros0oI2Z1OR",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "firebase-auth",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "getAuth",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": "getAuth"
+                },
+                "injectable": false
+            }
+        ],
+        "import_all": false,
+        "library": "firebase/auth",
+        "serviceDesignerType": "client",
+        "functionName": "firebaseAuth",
+        "category": "Function",
+        "x": 205,
+        "y": 100,
+        "wires": [
+            [
+                "sd_4EdfSjoFZ0IdfRzN"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "initializeFirebase",
+        "generated": true
+    },
+    {
+        "id": "sd_4EdfSjoFZ0IdfRzN",
+        "type": "UseDependency",
+        "z": "sd_JS5Dsros0oI2Z1OR",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "firebase-database",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "getDatabase",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": "getDatabase"
+                },
+                "injectable": false
+            },
+            {
+                "textIp": "ref",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": "ref"
+                },
+                "injectable": false
+            },
+            {
+                "textIp": "onValue",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": "onValue"
+                },
+                "injectable": false
+            }
+        ],
+        "import_all": false,
+        "library": "firebase/database",
+        "serviceDesignerType": "client",
+        "functionName": "firebaseDatabase",
+        "category": "Function",
+        "x": 305,
+        "y": 100,
+        "wires": [
+            [
+                "sd_SsHFvXLOXaaTS7UL"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "initializeFirebase",
+        "generated": true
+    },
+    {
+        "id": "sd_KFgG9ytvpwTakRVB",
+        "type": "ServiceVariables",
+        "z": "sd_JS5Dsros0oI2Z1OR",
+        "viewType": "client-server",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "auth",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": "auth"
+                }
+            },
+            {
+                "textIp": "database",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": "database"
+                }
+            }
+        ],
+        "functionName": "sd_KFgG9ytvpwTakRVB",
+        "category": "Function",
+        "x": 585,
+        "y": 100,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "initializeFirebase",
+        "generated": true
+    }
+]
